@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_fading_titles",
+  "info": {
+    "displayName": "fading_title",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "first_text": {
+      "type": "string"
+    },
+    "last_text": {
+      "type": "string"
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text"
+    }
+  }
+}

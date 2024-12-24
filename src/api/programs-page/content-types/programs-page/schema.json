@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "programs_pages",
+  "info": {
+    "singularName": "programs-page",
+    "pluralName": "programs-pages",
+    "displayName": "Programs_Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.fading-title"
+    },
+    "intro_text": {
+      "type": "text"
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program.program"
+    },
+    "partners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partner.partner"
+    }
+  }
+}

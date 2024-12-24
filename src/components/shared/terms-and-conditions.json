@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_terms_and_conditions",
+  "info": {
+    "displayName": "terms_and_conditions",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text"
+    }
+  }
+}

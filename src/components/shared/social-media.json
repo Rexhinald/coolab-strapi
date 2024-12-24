@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_social_medias",
+  "info": {
+    "displayName": "social_media"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

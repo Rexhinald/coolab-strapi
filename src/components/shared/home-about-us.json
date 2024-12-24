@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_home_about_uses",
+  "info": {
+    "displayName": "home_about_us"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
