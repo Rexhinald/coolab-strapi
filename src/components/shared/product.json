@@ -26,6 +26,9 @@
     },
     "period": {
       "type": "string"
+    },
+    "content": {
+      "type": "blocks"
     }
   }
 }

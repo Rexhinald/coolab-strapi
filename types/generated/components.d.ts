@@ -68,6 +68,7 @@ export interface SharedProduct extends Struct.ComponentSchema {
     displayName: 'product';
   };
   attributes: {
+    content: Schema.Attribute.Blocks;
     description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'files' | 'images'>;
     period: Schema.Attribute.String;
