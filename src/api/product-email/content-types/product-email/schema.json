@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_emails",
+  "info": {
+    "singularName": "product-email",
+    "pluralName": "product-emails",
+    "displayName": "ProductEmail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "regex": "^\\+?[1-9]\\d{1,14}$"
+    },
+    "message": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500
+    },
+    "product": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
