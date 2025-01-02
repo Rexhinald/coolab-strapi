@@ -3,8 +3,6 @@ module.exports = ({ env }) => ({
         config: {
             provider: 'aws-s3',
             providerOptions: {
-                // baseUrl: env('CDN_URL'),
-                // rootPath: env('CDN_ROOT_PATH'),
                 s3Options: {
                     credentials: {
                         accessKeyId: env('AWS_ACCESS_KEY_ID'),
@@ -22,6 +20,18 @@ module.exports = ({ env }) => ({
                 upload: {},
                 uploadStream: {},
                 delete: {},
+            },
+        },
+    },
+    email: {
+        config: {
+            provider: 'sendgrid',
+            providerOptions: {
+                apiKey: env('SENDGRID_API_KEY'),
+            },
+            settings: {
+                defaultFrom: env('SENDGRID_EMAIL'),
+                defaultReplyTo: env('SENDGRID_EMAIL'),
             },
         },
     },

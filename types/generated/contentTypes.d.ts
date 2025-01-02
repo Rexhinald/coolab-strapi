@@ -860,6 +860,7 @@ export interface ApiProductEmailProductEmail
 export interface ApiProgramProgram extends Struct.CollectionTypeSchema {
   collectionName: 'programs';
   info: {
+    description: '';
     displayName: 'Program';
     pluralName: 'programs';
     singularName: 'program';
@@ -884,6 +885,7 @@ export interface ApiProgramProgram extends Struct.CollectionTypeSchema {
       'api::program.program'
     > &
       Schema.Attribute.Private;
+    partners: Schema.Attribute.Relation<'oneToMany', 'api::partner.partner'>;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
